@@ -1,0 +1,54 @@
+html{
+    font-size: 16px;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:black;
+    overflow: hidden;
+}
+div.bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+div.bg img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+div.button-column{
+    position: absolute;
+    right:0.3rem;
+    top: 0%;
+}
+.close{
+    margin: 1rem 1rem 0rem 2rem;
+    color:wheat;
+}
+.curtain{
+    position: absolute;
+    /* z-index: -1; */
+    top:15%;
+    left: 25%;
+    width:50%;
+    height: 70%;
+    background-color: gray;
+    opacity: 0.5;
+    /* display: none; */
+    border-radius: 1.5rem;
+}
+.title{
+    display: block;
+    text-align: center;
+    color: wheat;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin:1rem 0rem;
+    font-size: 2rem;
+}

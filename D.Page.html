@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D.Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/D.Page.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+        <script src="js/buttonEvent.js"></script>
+        <script src="js/backgroundAnimation.js"></script>
+    </head>
+    <body onload="beginShowPic()">
+        <div class="bg">
+            <img src="" alt="" id="background-img" style="display:none">
+        </div>
+        <div class="button-column">
+            <button id="btnExpand" type="button" class="close" aria-label="Close" onclick="openDIV()" style="display:none">
+                    <span aria-hidden="true">◣</span>
+            </button>
+            <button id="stopShowBG" type="button" class="close" aria-label="Close" onclick="stopShowPic()" >
+                    <span aria-hidden="true">‖</span>
+            </button>
+            <button id="startShowBG" type="button" class="close" aria-label="Close" onclick="startShowPic()" style="display:none">
+                    <span aria-hidden="true">▶</span>
+            </button>
+        </div>
+        <div class="curtain" id="curtain">
+            <div class="button-column">
+                <button id="btnClose" type="button" class="close" aria-label="Close" onclick="closeDIV()">
+                        <span aria-hidden="true">◥</span>
+                </button>
+            </div>
+            <div class="title">收藏夹</div>
+            <div class="favourite-web">
+
+            </div>
+        </div>
+    </body>
+</html>
